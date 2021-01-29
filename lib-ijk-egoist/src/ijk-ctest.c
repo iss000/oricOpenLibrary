@@ -2,10 +2,10 @@
  **  ___ ___ _ _|_|___ ___
  ** |  _| .'|_'_| |_ -|_ -|
  ** |_| |__,|_,_|_|___|___|
- **         raxiss (c) 2019
+ **         raxiss (c) 2021
  **
- ** LGPL v2.1
- ** See https://github.com/iss000/IJK-egoist/blob/main/LICENSE
+ ** GNU General Public License v3.0
+ ** See https://github.com/iss000/oricOpenLibrary/blob/main/LICENSE
  **
  */
 

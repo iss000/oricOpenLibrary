@@ -7,8 +7,6 @@ Oric-1, Atmos, Telestrat, Pravetz-8D 8-bit retro computers.
 
 * [lib-sedoric](lib-sedoric) Sedoric compatible load and save functions.
 
-* [lib-basic](lib-basic) Call Basic and Sedoric commands from assembler code.
-
 
 ```
   _
