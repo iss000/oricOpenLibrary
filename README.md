@@ -3,16 +3,17 @@
 Collection of open source functions for
 Oric-1, Atmos, Telestrat, Pravetz-8D 8-bit retro computers.
 
-* [lib-ijk-egoist](lib-ijk-egoist) IJK-egoist / IJK-joystick sample code.
+* [lib-basic](lib-basic) Executes BASIC and SEDORIC commands from C code.
 
-* [lib-sedoric](lib-sedoric) Sedoric compatible load and save functions.
+* [lib-sedoric](lib-sedoric) Sedoric compatible load and save functions. (obsolette by lib-basic)
+
+* [lib-ijk-egoist](lib-ijk-egoist) IJK-egoist / IJK-joystick sample code.
 
 
 ```
-  _
- |_|___ ___
- | |_ -|_ -|
- |_|___|___|
-    (c) 2021
-
+              _
+  ___ ___ _ _|_|___ ___
+ |  _| .'|_'_| |_ -|_ -|
+ |_| |__,|_,_|_|___|___|
+     iss@raxiss (c) 2022
 ```

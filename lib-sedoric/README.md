@@ -7,9 +7,10 @@ There is a bug in this early version.
 The current version is fixed and optimized.
 
 ```
-              _
-  ___ ___ _ _|_|___ ___
- |  _| .'|_'_| |_ -|_ -|
- |_| |__,|_,_|_|___|___|
-                (c) 2021
+  _
+ |_|___ ___
+ | |_ -|_ -|
+ |_|___|___|
+  iss(c)2022
+
 ```
