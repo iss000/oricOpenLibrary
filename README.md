@@ -9,6 +9,8 @@ Oric-1, Atmos, Telestrat, Pravetz-8D 8-bit retro computers.
 
 * [lib-ijk-egoist](lib-ijk-egoist) IJK-egoist / IJK-joystick sample code.
 
+* [lib-ttf](lib-ttf) library and tools for TTF rendering and use in Oric.
+
 
 ```
               _
