@@ -1,0 +1,13 @@
+#)              _
+#)  ___ ___ _ _|_|___ ___
+#) |  _| .'|_'_| |_ -|_ -|
+#) |_| |__,|_,_|_|___|___|
+#)         raxiss (c) 2022
+
+# This file is normaly excluded from git.
+# It contains paths to your local toolchain directories.
+
+CC65_DIR   := ${HOME}/work/projects/8Bit/devtools/cc65
+OSDK_DIR   := ${HOME}/work/projects/8Bit/devtools/osdk-lcc65
+EMUL_DIR   := ${HOME}/work/projects/8Bit/emulators/oricutron-build
+COMMON_DIR := ${HOME}/work/projects/8Bit/work/common

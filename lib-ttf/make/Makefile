@@ -7,9 +7,9 @@
 # This Makefile is part of my Linux oolchain
 # It's here for reference only.
 
-PROJECT                 := test
+PROJECT                 := ttf_test
 PROJECT_DIR             := $(shell pwd)
-PROJECT_LABEL           := test
+PROJECT_LABEL           := ttf_test
 PROJECT_VERSION         := 1.00
 
 # # # Only for FlopyBuilder
@@ -51,7 +51,7 @@ CPROJECT                ?= $(PROJECT)
 # # #
 ATAPS                   :=
 BTAPS                   :=
-CTAPS                   := test
+CTAPS                   := $(PROJECT)
 OTAPS                   :=
 
 TAPS                    := $(addsuffix .tap,$(ATAPS) $(BTAPS) $(CTAPS) $(OTAPS))
@@ -63,12 +63,12 @@ PROJECT_DSK_EXCLUDE     +=
 common_SRC              :=
 
 # #
-test_SRC                := libbasic_test.c libbasic.s
-test_AUTORUN            := 1
-test_ADDRESS            := $(START_ADDRESS)
-test_ACPP               := 1
+ttf_test_SRC            := ttf_test.c ttf.s font-10.s font-12.s font-16.s font-20.s
+ttf_test_AUTORUN        := 1
+ttf_test_ADDRESS        := $(START_ADDRESS)
+ttf_test_ACPP           := 1
 
-EMU                     := ./oricutron
+EMU                     := ./oricutron-sdl2
 EMUDIR                  := $(EMUL_DIR)
 EMUARG                  := $(MACH)
 EMUARG                  += --serial none
@@ -79,10 +79,10 @@ EMUARG                  += -r :$(PROJECT_DIR)/$(PROJECT).brk
 EMUARG                  += #-r $(START_ADDRESS)
 
 #
-COMMON                  := $(COMMON_DIR)
-SRC                     := .
+# COMMON                  := $(COMMON_DIR)
+# SRC                     := .
 #
-VPATH                   := $(VPATH) $(SRC) $(COMMON)
+VPATH                   := $(VPATH) ./ res/
 
 PREPARE                 := prepare
 FINALIZE                := finalize
@@ -126,12 +126,12 @@ CFLAGS                  += $(addprefix -I,$(VPATH))
 # CFLAGS                  += -DUSE_JOYSTICK_IJK_EGOIST
 # CFLAGS                  += -DUSE_JOYSTICK_ALTAI
 
-# test_AFLAGS             +=
-# test_CFLAGS             +=
-# test_LFLAGS             += -D__GRAB__=1
+# ttf_test_AFLAGS             +=
+# ttf_test_CFLAGS             +=
+# ttf_test_LFLAGS             += -D__GRAB__=1
 #
-test_AFLAGS              := -DSTART_ADDRESS=$(START_ADDRESS)
-test_CFLAGS              := -DSTART_ADDRESS=$(START_ADDRESS)
+ttf_test_AFLAGS              := -DSTART_ADDRESS=$(START_ADDRESS)
+ttf_test_CFLAGS              := -DSTART_ADDRESS=$(START_ADDRESS)
 
 # # # additional file to delete
 TEMP_FILES              +=
@@ -141,8 +141,8 @@ prepare: nfo res
 finalize: #hxc
 	@([ -e $(PROJECT).brk ] || touch $(PROJECT).brk) || echo -n
 	@echo   "[NFO]   ------------------------------"
-	@printf "[MEM]   test   : #%.4X .. #%.4X\\n" $$(($(test_ADDRESS))) $$(expr `cat test  | wc -c` + $$(($(test_ADDRESS))))
-	@echo   "[CRC]   $$(crc32 test)"
+	@printf "[MEM]   ttf_test   : #%.4X .. #%.4X\\n" $$(($(ttf_test_ADDRESS))) $$(expr `cat ttf_test  | wc -c` + $$(($(ttf_test_ADDRESS))))
+	@echo   "[CRC]   $$(crc32 ttf_test)"
 
 .PHONY: nfo res check
 
@@ -153,4 +153,4 @@ res:
 	@true
 
 check: all
-	@oric -ma -s $(PROJECT_DIR)/test.sym -r :$(PROJECT_DIR)/$(PROJECT).brk test.dsk
+	@oric2 -ma -s $(PROJECT_DIR)/ttf_test.sym -r :$(PROJECT_DIR)/$(PROJECT).brk ttf_test.dsk
