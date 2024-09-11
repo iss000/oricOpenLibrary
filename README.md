@@ -11,7 +11,7 @@ Oric-1, Atmos, Telestrat, Pravetz-8D 8-bit retro computers.
 
 * [lib-ttf](lib-ttf) library and tools for TTF rendering and use in Oric.
 
-* [lib-romident](lib-romident) library for ROM indentification using known crc32.
+* [lib-romident](lib-romident) library for ROM identification using known crc32.
 
 
 ```

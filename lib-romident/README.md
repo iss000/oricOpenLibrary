@@ -1,6 +1,6 @@
 # lib-romident
 
-Library for ROM indentification using known crc32.
+Library for ROM identification using known crc32.
 
 Any updates are highly appreciated.
 
