@@ -6,3 +6,6 @@ obj/
 *.brk
 *.bak
 *.*~
+
+!qrdemo.tap
+!qrdemoa.tap
