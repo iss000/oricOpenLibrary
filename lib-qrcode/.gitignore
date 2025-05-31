@@ -1,0 +1,8 @@
+bin/
+obj/
+
+*.tap
+*.dsk
+*.brk
+*.bak
+*.*~

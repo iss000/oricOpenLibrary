@@ -13,11 +13,15 @@ Oric-1, Atmos, Telestrat, Pravetz-8D 8-bit retro computers.
 
 * [lib-romident](lib-romident) library for ROM identification using known crc32.
 
+* [lib-qrcode](lib-qrcode) QR-code generator very fast!
+
+* [lib-qrgen-0.2](lib-qrgen-0.2) QR-code generator - slooow, useful for compiler benchmark purposes only.
+
 
 ```
               _
   ___ ___ _ _|_|___ ___
  |  _| .'|_'_| |_ -|_ -|
  |_| |__,|_,_|_|___|___|
-     iss@raxiss (c) 2024
+  iss@raxiss(c)2015-2025
 ```
