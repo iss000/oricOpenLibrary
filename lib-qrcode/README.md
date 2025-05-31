@@ -10,6 +10,8 @@ Assembler source converted to XA-syntax, optimizizations and test code:
 
 by iss@raxiss.com (C) 2025
 
+![pic](pic/demo.jpg)
+
 Compiled demos:
 * [qrdemo.tap] (qrdemo.tap) C/ASM
 * [qrdemoa.tap] (qrdemoa.tap) ASM only
