@@ -4,7 +4,7 @@
 #) |_| |__,|_,_|_|___|___|
 #)         raxiss (c) 2022
 
-# This Makefile is part of my Linux oolchain
+# This Makefile is part of my Linux toolchain
 # It's here for reference only.
 
 PROJECT                 := test
